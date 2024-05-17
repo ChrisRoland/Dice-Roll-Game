@@ -1,0 +1,59 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-color: #0a7715;
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Jaro', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #ede2bd;
+}
+
+p {
+  font-size: 2rem;
+  color: #ede2bd;
+  font-family: 'Dancing Script', cursive;
+}
+
+img {
+  width: 80%;
+}
+
+.btn {
+  margin-top: 5%;
+}
+
+button {
+  font-family: 'Lobster', cursive;
+  border-radius: 30%;
+  padding: 10px;
+  background-color: #ede2bd;
+  box-shadow: 2px 2px 0 black;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #e0ce94;
+  font-size: 1.2rem;
+  transition: 300ms;
+}
+
+footer {
+  margin-top: 4%;
+  color: #ede2bd;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
