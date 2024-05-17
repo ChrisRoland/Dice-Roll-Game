@@ -20,10 +20,7 @@ if (randomNumber1 > randomNumber2) {
 
 } else if (randomNumber1 === randomNumber2) {
     document.querySelector("h1").textContent = "It's a Draw! 🏴‍☠️";
-
-} else {
-    document.querySelector("h1").textContent = "Refresh Me";
-};
+}
 
 // Add Button to roll die
 document.getElementById("refreshButton").addEventListener("click", function() {
