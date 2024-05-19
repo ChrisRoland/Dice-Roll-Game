@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>DiceRollGame</title>
-    <link rel="icon" type="image/svg+xml" href="./images/dice6.png">
+    <link rel="icon" type="image/svg+xml" href="./images/dice6.png" />
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Jaro|Dancing+Script"
@@ -11,26 +11,31 @@
     />
   </head>
   <body>
-    <div class="container">
-      <h1 class="ref">Dice Roll Game</h1>
+    <div id="main">
+      <div class="container">
+        <h1 class="">Dice <span>Roll</span> Game</h1>
 
-      <div class="dice">
-        <p>Player 1</p>
-        <img class="img1" src="images/dice6.png" />
+        <h2 class="ref"></h2>
+
+        <div class="dice">
+          <p>Player 1</p>
+          <img class="img1" src="images/dice6.png" />
+        </div>
+
+        <div class="dice">
+          <p>Player 2</p>
+          <img class="img2" src="images/dice6.png" />
+        </div>
+
+        <div class="btn">
+          <button id="refreshButton">
+            Roll Dice <span class="spin">🎲</span>
+          </button>
+        </div>
       </div>
 
-      <div class="dice">
-        <p>Player 2</p>
-        <img class="img2" src="images/dice6.png" />
-      </div>
-      
-      <div class="btn">
-        <button id="refreshButton">Roll Dice</button>
-      </div>
+      <footer>🎲 Chris's DiceRoll Game 🎲 © <span id="date">2024</span></footer>
     </div>
-
-    <footer>🎲 Chris's DiceRoll Game 🎲 © <span id="date">2024</span></footer>
-
     <script src="index.js"></script>
   </body>
 </html>

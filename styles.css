@@ -10,22 +10,45 @@
 
 }
 
-body {
-  background-color: #0a7715;
+#main {
+  background-color: #0a7715e7;
 }
 
+body {
+  background-image: url("images/image.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
 h1 {
+  margin: 10px 30px;
+  font-family: 'Jaro', cursive;
+  text-shadow: 5px 0 #ede2bd;
+  font-size: 6rem;
+  color: #881304;
+}
+
+h1>span {
+  color: #ede2bd;
+  text-shadow: 5px 0 #232931;
+}
+
+h2 {
   margin: 30px;
   font-family: 'Jaro', cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 8rem;
+  font-size: 4rem;
   color: #ede2bd;
 }
 
 p {
   font-size: 2rem;
+  text-shadow: 3px 0 #232931;
   color: #ede2bd;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Lobster', cursive;
 }
 
 img {
@@ -38,8 +61,9 @@ img {
 
 button {
   font-family: 'Lobster', cursive;
-  border-radius: 30%;
-  padding: 10px;
+  font-size: 1rem;
+  border-radius: 50px;
+  padding: 10px 30px 10px;
   background-color: #ede2bd;
   box-shadow: 2px 2px 0 black;
 }
@@ -53,7 +77,84 @@ button:hover {
 
 footer {
   margin-top: 4%;
+  padding-bottom: 1%;
   color: #ede2bd;
   text-align: center;
   font-family: 'Dancing Script', cursive;
 }
+
+/*Animations*/
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 1s ease-in-out;
+}
+
+
+span.spin {
+  display: inline-block;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* mobile screen */
+@media not all and (min-width: 982px) {
+  body {
+    background-size: auto;
+    background-repeat: repeat;
+  }
+
+  h1 {
+    padding-top: 50%;
+    font-size: 6.4rem;
+  }
+
+  h2 {
+    margin: 80px;
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 3rem;
+  }
+
+  .dice img {
+    width: 90%;
+    margin: 0 30px;
+    padding: 0 5px;
+  }
+
+  button {
+    font-size: 3rem;
+    padding: 10px 30px;
+    margin: 60px;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: #e0ce94;
+    font-size: 3.5rem;
+    transition: 300ms;
+  }
+
+  footer {
+    margin-top: 50%;
+    padding-bottom: 10%;
+    font-size: 1rem;
+  }
+} 
