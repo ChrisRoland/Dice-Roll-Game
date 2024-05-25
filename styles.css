@@ -75,6 +75,28 @@ button:hover {
   transition: 300ms;
 }
 
+.links {
+  margin-top: 10%;
+}
+.links>p{
+  font-size: 1rem;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+a {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #e0ce94;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
 footer {
   margin-top: 4%;
   padding-bottom: 1%;
@@ -150,6 +172,13 @@ span.spin {
     background-color: #e0ce94;
     font-size: 3.5rem;
     transition: 300ms;
+  }
+
+  .links {
+    margin-top: 25%;
+  }
+  .links>p{
+    font-size: 2rem;
   }
 
   footer {
